@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $p-container-mobile;
+  background-color: $c-highlight;
+
+  @media ($b-large) {
+    padding: $p-container;
+  }
+}
+
+.footer__text {
+  @include font-size-h3;
+
+  margin: $m-medium 0;
+  color: $c-white;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-base;
+  }
+}
+
+.footer__love {
+  content: url('../images/icons/heart.svg');
+  position: relative;
+  top: 0.3125rem;
+  margin: 0 $m-tiny;
+}

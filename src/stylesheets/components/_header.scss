@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $p-container-mobile;
+
+  @media ($b-large) {
+    padding: $p-container;
+  }
+}
+
+.header__title {
+  margin-bottom: $m-small;
+
+  @media ($b-large) {
+    margin: 0;
+  }
+}
+
+.header__subtitle {
+  @include font-size-h3;
+
+  color: $c-base;
+}
+
+.header__image {
+  width: 7rem;
+  border-radius: 50%;
+
+  @media ($b-large) {
+    width: 11rem;
+  }
+}

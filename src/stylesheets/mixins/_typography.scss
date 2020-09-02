@@ -1,0 +1,44 @@
+@mixin font-size-h1 {
+  margin: 0;
+  font-family: $f-bold;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: $c-base;
+
+  @media ($b-large) {
+    font-size: 3rem;
+    line-height: 1.385;
+  }
+}
+
+@mixin font-size-h2 {
+  font-family: $f-bold;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  color: $c-highlight;
+
+  @media ($b-large) {
+    line-height: 1.375;
+  }
+}
+
+@mixin font-size-h3 {
+  font-family: $f-bold;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+
+  @media ($b-large) {
+    line-height: 1.375;
+  }
+}
+
+@mixin font-size-p {
+  font-family: $f-light;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375;
+  color: $c-white;
+}

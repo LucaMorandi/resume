@@ -1,33 +1,203 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Webpack ES6+ Sass Boilerplate</title>
+    <title>Luca Morandi - Resume</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" />
-
-    <!-- You can use open graph tags to customize link previews.
-        Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url" content="https://github.com/vadimmarkov/webpack-es6-sass-boilerplate" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Webpack ES6+ Sass Boilerplate" />
-    <meta
-      property="og:description"
-      content="A minimalistic webpack 4 based boilerplate for building web apps"
-    />
-    <meta property="og:image" content="https://webpack.js.org/icon_192x192.png" />
-
-    <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <a href="/" class="logo">
-      <img src="images/logo.png" alt="Webpack ES6+ Sass Boilerplate" />
-    </a>
-    <h1>Webpack ES6+ Sass Boilerplate</h1>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="header__title">Luca Morandi</h1>
+        <span class="header__subtitle">Equal parts thinker and tinkerer</span>
+      </div>
+      <img class="header__image" src="images/me.jpg" />
+    </header>
+
+    <div class="resume">
+      <section class="section">
+        <div class="introduction">
+          <h2 class="section__title">About me</h2>
+          <p class="section__description">I love building software. I enjoy delivering real business value to clients.  I believe agile working yields the best results. My ultimate aim is attaining mastery as a web developer.</p>
+        </div>
+
+        <h2 class="section__title">Work Experience</h2>
+
+        <div class="experience">
+          <h3 class="experience__title">Full stack developer / Scrum Master</h3>
+          <div class="experience__meta">
+            <span class="experience__company">Digitpaint</span>
+            <span class="experience__location">Arnhem</span>
+            <span class="experience__date">September 2018 - present</span>
+          </div>
+          <p class="experience__description">Besides building and maintaining web applications for clients, I support our agile teams as a Scrum Master.</p>
+          <p class="experience__description">Other responsibilities:</p>
+          <ul class="experience__summary">
+            <li class="experience__summary-item">Member of the DevOps team</li>
+            <li class="experience__summary-item">Informal advocate of engineering culture</li>
+            <li class="experience__summary-item">Safeguarding the organization as Security Officer</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__title">Full stack developer</h3>
+          <div class="experience__meta">
+            <span class="experience__company">Entopic</span>
+            <span class="experience__location">Amsterdam</span>
+            <span class="experience__date">February 2017 - August 2018</span>
+          </div>
+          <p class="experience__description">My primary objective was building web applications for internal use, in order to increase efficiency and promote better decision-making.</p>
+          <p class="experience__description">Other responsibilities:</p>
+          <ul class="experience__summary">
+            <li class="experience__summary-item">Frontend development for clients</li>
+            <li class="experience__summary-item">Selecting and connecting SaaS solutions</li>
+            <li class="experience__summary-item">Safeguarding the organization as Security Officer</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__title">Frontend Developer / Project Manager</h3>
+          <div class="experience__meta">
+            <span class="experience__company">Entopic</span>
+            <span class="experience__location">Amsterdam</span>
+            <span class="experience__date">February 2015 - January 2017</span>
+          </div>
+          <p class="experience__description">During this period I supported clients in many ways and often onsite.</p>
+          <ul class="experience__summary">
+            <li class="experience__summary-item">Frontend development</li>
+            <li class="experience__summary-item">CMS consultancy</li>
+            <li class="experience__summary-item">Training CMS end users</li>
+            <li class="experience__summary-item">Managing projects and supporting team members</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__title">Senior Contentmanager</h3>
+          <div class="experience__meta">
+            <span class="experience__company">Entopic</span>
+            <span class="experience__location">Amsterdam</span>
+            <span class="experience__date">August 2013 - January 2015</span>
+          </div>
+          <p class="experience__description">When I started working for Entopic I was mostly involved in managing content and projects, often onsite.</p>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__title">Contentmanager</h3>
+          <div class="experience__meta">
+            <span class="experience__company">iCentre</span>
+            <span class="experience__location">Uitgeest</span>
+            <span class="experience__date">June 2011 - July 2013</span>
+          </div>
+          <p class="experience__description">Where it all started for me, dipping my toes in the world of HTML and content management systems.</p>
+          <ul class="experience__summary">
+            <li class="experience__summary-item">Copywriting</li>
+            <li class="experience__summary-item">Managing content in the Magento CMS</li>
+            <li class="experience__summary-item">Search engine optimization</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="aside">
+        <div class="facts">
+          <h2 class="aside__title">Getting geeky</h2>
+          <ul class="facts__list">
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--about">Personality</span>
+              <span class="facts__item-description">Double spaces, single quotes</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--ruby">Roots</span>
+              <span class="facts__item-description">Ruby's philosophy / The Rails Doctrine</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--like">Indulgence</span>
+              <span class="facts__item-description">Marie Kondo-ing a codebase</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--terminal">Tools of choice</span>
+              <span class="facts__item-description">Zsh / tmux / Vim / VS Code</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--keyboard">Interface</span>
+              <span class="facts__item-description">Vortex Race 3 RGB / Cherry MX Red / MiTo SA Laser</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="facts">
+          <h2 class="aside__title">Education</h2>
+          <ul class="facts__list">
+            <li class="facts__item--education">
+              <span class="facts__item-title facts__item-title--education">Xebia Academy</span>
+              <span class="facts__item-description--education">Certified Scrum Master</span>
+            </li>
+            <li class="facts__item--education">
+              <span class="facts__item-title facts__item-title--education">Codaisseur</span>
+              <span class="facts__item-description--education">Intermediate Development Bootcamp</span>
+            </li>
+            <li class="facts__item--education">
+              <span class="facts__item-title facts__item-title--education">Amsterdam University of Applied Sciences</span>
+              <span class="facts__item-description--education">Media, Information and Communication</span>
+            </li>
+            <li class="facts__item--education">
+              <span class="facts__item-title facts__item-title--education">Jac. P. Thijsse College</span>
+              <span class="facts__item-description--education">Higher General Secondary Education (Culture and Society)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="facts">
+          <h2 class="aside__title">Nitty gritty</h2>
+          <ul class="facts__list">
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--frontend">HTML 5, CSS 3, Sass, Bootstrap</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--javascript">JavaScript (ES6/ES2017), Node.js, Express, jQuery</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--ruby">Ruby, Rails, Sinatra</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--php">PHP, Laravel, WordPress</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--templating">ERB, Liquid, Twig, Blade, Mustache</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--markup">Markdown, Haml</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--db">MySQL, PostgreSQL, MS SQL Server, Redis</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--git">Git, Github, GitLab, Bitbucket</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--tools">webpack, gulp.js, Grunt</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--dependencies">NPM, Yarn, Composer, Bundler, Homebrew, APT</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--docker">Docker, Docker Compose</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--server">Apache, NGINX</span>
+            </li>
+            <li class="facts__item">
+              <span class="facts__item-title facts__item-title--details facts__item-title--os">macOS, Ubuntu, CentOS</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <a href="https://github.com/LucaMorandi/resume" alt="View my repository on Github" class="footer__text">Made with<i class="footer__love"></i>by Luca</a>
+    </footer>
   </body>
 </html>

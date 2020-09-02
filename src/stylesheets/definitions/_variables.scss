@@ -1,0 +1,25 @@
+// Breakpoints
+$b-large: 'min-width: 62.5rem';
+
+// Margins
+$m-tiny: 0.625rem;
+$m-small: 1.25rem;
+$m-medium: 2.5rem;
+
+// Paddings
+$p-small: 1rem;
+$p-medium: 2rem;
+$p-large: 3rem;
+$p-container-mobile: $p-small $p-medium;
+$p-container: $p-medium $p-large;
+
+// Fonts
+$f-bold: 'Roboto Bold';
+$f-light: 'Roboto Light';
+
+// Colors
+$c-black: #000;
+$c-white: #FFF;
+$c-base: #2A1B3D;
+$c-highlight: #D83F87;
+$c-blue: #44318D;

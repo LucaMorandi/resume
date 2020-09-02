@@ -1,0 +1,44 @@
+.resume {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: $p-container-mobile;
+  border-top: 0.3125rem solid $c-highlight;
+  background-color: $c-base;
+
+  @media ($b-large) {
+    padding: $p-container;
+  }
+}
+
+.section {
+  width: 100%;
+
+  @media ($b-large) {
+    width: 50%;
+  }
+}
+
+.aside {
+  width: 100%;
+
+  @media ($b-large) {
+    width: 35%;
+  }
+}
+
+.section,
+.aside {
+  &__title,
+  &__description {
+    margin-bottom: $m-small;
+  }
+}
+
+.introduction {
+  margin: $m-small 0 $m-medium;
+
+  @media ($b-large) {
+    margin: 0 0 $m-medium;
+  }
+}

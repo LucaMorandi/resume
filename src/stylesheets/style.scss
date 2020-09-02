@@ -1,31 +1,21 @@
+// Vendor
 @import '~normalize.css/normalize.css';
-@import './base';
-@import './media';
-@import './fonts';
 
-// custom styles
+// Mixins
+@import 'mixins/typography';
 
-html {
-  height: 100%;
-}
+// Variables
+@import 'definitions/variables';
 
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
-}
+// Base
+@import 'base/global';
+@import 'base/fonts';
 
-a {
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: inline-block;
+// Layout
+@import 'layouts/resume';
 
-  img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 80px;
-  }
-}
+// Components
+@import 'components/header';
+@import 'components/experience';
+@import 'components/facts';
+@import 'components/footer';
