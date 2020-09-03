@@ -1,12 +1,9 @@
-# Resume of Luca Morandi
+# Luca Morandi's resume
 
 ## Getting started
 
-- clone the repo via `git clone https://github.com/vadimmarkov/webpack-es6-sass-boilerplate.git`
-- `cd webpack-es6-sass-boilerplate`
 - run `npm install` to fetch all the dependencies
 - run `npm run start` to start the [webpack-dev-server](https://github.com/webpack/webpack-dev-server) (`localhost:8080` will be opened automatically)
-- start developing
 - when you are done, run `npm run build` to get the production version of your app
 
 ## Commands
