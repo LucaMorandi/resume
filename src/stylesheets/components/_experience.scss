@@ -32,7 +32,7 @@
 
   &::before {
     position: relative;
-    top: $o-tiny;
+    top: $o-icon-tiny;
     margin-right: $m-tiny;
   }
 }
@@ -42,11 +42,11 @@
 }
 
 .experience__date::before {
-  content: url('../images/icons/calendar-alt.svg');
+  content: url('../images/icons/calendar.svg');
 }
 
 .experience__location::before {
-  content: url('../images/icons/map-marker-alt.svg');
+  content: url('../images/icons/map-marker.svg');
 }
 
 .experience__title,

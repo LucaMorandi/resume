@@ -17,15 +17,16 @@ $p-container-mobile: $p-small $p-medium;
 $p-container: $p-medium $p-large;
 
 // Offsets
-$o-tiny: 0.1875rem;
+$o-icon-tiny: 0.1875rem;
+$o-icon-small: 0.375rem;
 
 // Fonts
 $f-bold: 'Roboto Bold';
 $f-light: 'Roboto Light';
 
 // Colors
-$c-black: #000;
-$c-white: #FFF;
 $c-base: #2A1B3D;
 $c-highlight: #D83F87;
+$c-black: #000;
+$c-white: #FFF;
 $c-blue: #44318D;

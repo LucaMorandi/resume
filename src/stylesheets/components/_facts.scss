@@ -37,7 +37,7 @@
 
   &::before {
     position: relative;
-    top: $o-tiny;
+    top: $o-icon-small;
     margin-right: $m-tiny;
   }
 
@@ -62,7 +62,7 @@
   }
 
   &--git::before {
-    content: url('../images/icons/git-alt.svg');
+    content: url('../images/icons/git.svg');
   }
 
   &--javascript::before {
@@ -74,12 +74,7 @@
   }
 
   &--like::before {
-    content: url('../images/icons/thumbs-up.svg');
-    top: 0;
-  }
-
-  &--markup::before {
-    content: url('../images/icons/markdown.svg');
+    content: url('../images/icons/smile.svg');
   }
 
   &--os::before {
@@ -99,7 +94,7 @@
   }
 
   &--templating::before {
-    content: url('../images/icons/file-code.svg');
+    content: url('../images/icons/file.svg');
   }
 
   &--terminal::before {
