@@ -6,7 +6,7 @@
   border-top: 0.3125rem solid $c-highlight;
   background-color: $c-base;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     padding: $p-container;
   }
 }
@@ -14,7 +14,7 @@
 .section {
   width: 100%;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     width: 50%;
   }
 }
@@ -22,7 +22,7 @@
 .aside {
   width: 100%;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     width: 35%;
   }
 }
@@ -38,7 +38,7 @@
 .introduction {
   margin: $m-small 0 $m-medium;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     margin: 0 0 $m-medium;
   }
 }

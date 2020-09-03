@@ -6,7 +6,7 @@
   line-height: 1;
   color: $c-base;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     font-size: 3rem;
     line-height: 1.385;
   }
@@ -19,7 +19,7 @@
   line-height: 1;
   color: $c-highlight;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     line-height: 1.375;
   }
 }
@@ -30,7 +30,7 @@
   font-weight: 700;
   line-height: 1;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     line-height: 1.375;
   }
 }

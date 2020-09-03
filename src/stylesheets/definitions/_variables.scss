@@ -1,5 +1,8 @@
 // Breakpoints
-$b-large: 'min-width: 62.5rem';
+$b-medium: 37.5rem;
+$b-large: 62.5rem;
+$b-min-medium: 'min-width: #{$b-medium}';
+$b-min-large: 'min-width: #{$b-large}';
 
 // Margins
 $m-tiny: 0.625rem;
@@ -12,6 +15,9 @@ $p-medium: 2rem;
 $p-large: 3rem;
 $p-container-mobile: $p-small $p-medium;
 $p-container: $p-medium $p-large;
+
+// Offsets
+$o-tiny: 0.1875rem;
 
 // Fonts
 $f-bold: 'Roboto Bold';

@@ -5,7 +5,7 @@
   padding: $p-container-mobile;
   background-color: $c-highlight;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     padding: $p-container;
   }
 }

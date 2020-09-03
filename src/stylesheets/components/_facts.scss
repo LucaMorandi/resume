@@ -2,15 +2,31 @@
   margin-bottom: $m-medium;
 }
 
+.facts__list {
+  @media (min-width: $b-medium) and (max-width: $b-large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &--education {
+    display: block;
+  }
+}
+
 .facts__item {
   display: flex;
   flex-direction: column;
   margin-bottom: $m-small;
   list-style-type: none;
 
+  @media (min-width: $b-medium) and (max-width: $b-large) {
+    width: 45%;
+  }
+
   &--education {
-    margin-bottom: $m-tiny;
     display: block;
+    margin-bottom: $m-tiny;
   }
 }
 
@@ -21,7 +37,7 @@
 
   &::before {
     position: relative;
-    top: 0.1875rem;
+    top: $o-tiny;
     margin-right: $m-tiny;
   }
 

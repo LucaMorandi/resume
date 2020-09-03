@@ -4,7 +4,7 @@
   align-items: center;
   padding: $p-container-mobile;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     padding: $p-container;
   }
 }
@@ -12,7 +12,7 @@
 .header__title {
   margin-bottom: $m-small;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     margin: 0;
   }
 }
@@ -27,7 +27,7 @@
   width: 7rem;
   border-radius: 50%;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     width: 11rem;
   }
 }

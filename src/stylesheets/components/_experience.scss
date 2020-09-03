@@ -4,7 +4,7 @@
   border-bottom: 0.0625rem solid $c-white;
 
   &:last-of-type {
-    @media ($b-large) {
+    @media ($b-min-large) {
       border: none;
     }
   }
@@ -16,7 +16,7 @@
   flex-direction: column;
   margin-bottom: $m-tiny;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     flex-direction: row;
   }
 }
@@ -26,11 +26,13 @@
 .experience__location {
   margin-bottom: $m-tiny;
 
-  @media ($b-large) {
+  @media ($b-min-large) {
     margin: 0;
   }
 
   &::before {
+    position: relative;
+    top: $o-tiny;
     margin-right: $m-tiny;
   }
 }
