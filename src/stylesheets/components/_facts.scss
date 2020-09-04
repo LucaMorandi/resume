@@ -49,10 +49,6 @@
     content: url('../images/icons/database.svg');
   }
 
-  &--dependencies::before {
-    content: url('../images/icons/npm.svg');
-  }
-
   &--docker::before {
     content: url('../images/icons/docker.svg');
   }
@@ -77,10 +73,6 @@
     content: url('../images/icons/smile.svg');
   }
 
-  &--os::before {
-    content: url('../images/icons/ubuntu.svg');
-  }
-
   &--php::before {
     content: url('../images/icons/php.svg');
   }
@@ -99,10 +91,6 @@
 
   &--terminal::before {
     content: url('../images/icons/terminal.svg');
-  }
-
-  &--tools::before {
-    content: url('../images/icons/gulp.svg');
   }
 }
 
