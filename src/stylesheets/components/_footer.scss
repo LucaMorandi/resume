@@ -10,21 +10,24 @@
   }
 }
 
-.footer__text {
-  @include font-size-h3;
-
-  margin: $m-medium 0;
-  color: $c-white;
-  text-decoration: none;
-
-  &:hover {
-    color: $c-base;
-  }
-}
-
 .footer__love {
   content: url('../images/icons/heart.svg');
   position: relative;
   top: 0.3125rem;
   margin: 0 $m-tiny;
+}
+
+.footer__text {
+  @include font-size-h3;
+
+  margin: $m-medium 0;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-base;
+
+    .footer__love {
+      content: url('../images/icons/heart--highlighted.svg');
+    }
+  }
 }

@@ -1,7 +1,7 @@
 .experience {
   margin-bottom: $m-medium;
   padding-bottom: $p-medium;
-  border-bottom: 0.0625rem solid $c-white;
+  border-bottom: 0.0625rem solid $c-off-white;
 
   &:last-of-type {
     @media ($b-min-large) {
@@ -47,6 +47,10 @@
 
 .experience__location::before {
   content: url('../images/icons/map-marker.svg');
+}
+
+.experience__title {
+  color: $c-white;
 }
 
 .experience__title,
