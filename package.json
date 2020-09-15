@@ -92,5 +92,7 @@
       "git add"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "three": "^0.120.1"
+  }
 }
