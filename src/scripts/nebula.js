@@ -1,11 +1,14 @@
 import * as THREE from 'three';
 
 /**
- * Copyright (c) 2020 by RyanIndustries8 (https://codepen.io/ryanindustries8/pen/XWdYdGz)
+ * Copyright 2020 by RyanIndustries8
+ * https://codepen.io/ryanindustries8/pen/XWdYdGz
+ *
+ * TODO: refactor this mess
  */
 
 export function generateNebula(node) {
-  let scene, camera, composer, renderer, cloudParticles = [];
+  let renderer, camera, scene, cloudParticles = [];
 
   function init(node) {
     scene = new THREE.Scene();
@@ -34,12 +37,9 @@ export function generateNebula(node) {
     blueLight.position.set(300,300,200);
     scene.add(blueLight);
 
-    renderer = new THREE.WebGLRenderer();
-    renderer.setSize(node.offsetWidth, node.offsetHeight);
+    renderer = new THREE.WebGLRenderer({ canvas: node });
     scene.fog = new THREE.FogExp2(0x03544e, 0.001);
     renderer.setClearColor(scene.fog.color);
-
-    node.appendChild(renderer.domElement);
 
     let loader = new THREE.TextureLoader();
 
@@ -73,7 +73,6 @@ export function generateNebula(node) {
   function onWindowResize(node) {
     camera.aspect = node.offsetWidth / node.offsetHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(node.offsetWidth, node.offsetHeight);
   }
 
   function render() {

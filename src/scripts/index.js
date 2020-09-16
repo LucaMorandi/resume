@@ -2,4 +2,4 @@
 import { generateNebula } from './nebula';
 import '../stylesheets/style.scss';
 
-generateNebula(document.querySelector('.header'));
+generateNebula(document.querySelector('.header__background'));

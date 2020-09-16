@@ -9,12 +9,14 @@
   @media ($b-min-large) {
     padding: $p-container;
   }
+}
 
-  canvas {
-    position: absolute;
-    left: 0;
-    z-index: -1;
-  }
+.header__background {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .header__title {
@@ -27,7 +29,6 @@
 
 .header__subtitle {
   @include font-size-h3;
-
 }
 
 .header__image {
