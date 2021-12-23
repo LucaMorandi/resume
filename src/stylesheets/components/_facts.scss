@@ -1,0 +1,126 @@
+.facts {
+  margin-bottom: $m-medium;
+}
+
+.facts__list {
+  @media (min-width: $b-medium) and (max-width: $b-large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.facts__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $m-small;
+  list-style-type: none;
+
+  @media (min-width: $b-medium) and (max-width: $b-large) {
+    width: 45%;
+  }
+}
+
+.facts__title {
+  @include font-size-h3;
+
+  &::before {
+    display: inline-block;
+    position: relative;
+    top: $o-icon-small;
+    margin-right: $m-tiny;
+    margin-bottom: $m-tiny;
+  }
+
+  &--about::before {
+    content: url('../images/icons/glasses.svg');
+  }
+
+  &--db::before {
+    content: url('../images/icons/database.svg');
+  }
+
+  &--docker::before {
+    content: url('../images/icons/docker.svg');
+  }
+
+  &--frontend::before {
+    content: url('../images/icons/sass.svg');
+  }
+
+  &--git::before {
+    content: url('../images/icons/git.svg');
+  }
+
+  &--javascript::before {
+    content: url('../images/icons/node-js.svg');
+  }
+
+  &--keyboard::before {
+    content: url('../images/icons/keyboard.svg');
+  }
+
+  &--like::before {
+    content: url('../images/icons/smile.svg');
+  }
+
+  &--php::before {
+    content: url('../images/icons/php.svg');
+  }
+
+  &--ruby::before {
+    content: url('../images/icons/gem.svg');
+  }
+
+  &--server::before {
+    content: url('../images/icons/server.svg');
+  }
+
+  &--templating::before {
+    content: url('../images/icons/file.svg');
+  }
+
+  &--terminal::before {
+    content: url('../images/icons/terminal.svg');
+  }
+}
+
+.facts--beliefs {
+  .facts__list {
+    @include list;
+  }
+
+  .facts__item {
+    @include list-item;
+  }
+}
+
+.facts--details {
+  .facts__title {
+    @include font-size-p;
+  }
+}
+
+.facts--education {
+  .facts__list {
+    display: block;
+  }
+
+  .facts__item {
+    display: block;
+    margin-bottom: $m-tiny;
+
+    @media (min-width: $b-medium) and (max-width: $b-large) {
+      width: 100%;
+    }
+  }
+
+  .facts__title,
+  .facts__description {
+    line-height: 1.75;
+  }
+
+  .facts__description::before {
+    content: ' - ';
+  }
+}

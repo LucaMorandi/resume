@@ -1,0 +1,36 @@
+.footer {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  padding: $p-small $p-medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-highlight;
+
+  @media ($b-min-large) {
+    padding: $p-container;
+  }
+}
+
+.footer__icon {
+  content: url('../images/icons/heart.svg');
+  position: relative;
+  top: 0.3125rem;
+  margin: 0 $m-tiny;
+}
+
+.footer__text {
+  @include font-size-h3;
+
+  margin: $m-medium 0;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-base;
+
+    .footer__icon {
+      content: url('../images/icons/heart--highlighted.svg');
+    }
+  }
+}

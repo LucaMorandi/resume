@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $p-container-mobile;
+  overflow: hidden;
+  background-color: $c-base;
+
+  @media ($b-min-large) {
+    padding: $p-container;
+  }
+}
+
+.header__title {
+  margin-bottom: $m-small;
+  color: $c-highlight;
+
+  @media ($b-min-large) {
+    margin: 0;
+  }
+}
+
+.header__subtitle {
+  @include font-size-h3;
+}
+
+.header__image {
+  margin-left: $m-small;
+  width: 5rem;
+  border-radius: 50%;
+
+  @media ($b-min-medium) {
+    width: 7rem;
+  }
+
+  @media ($b-min-large) {
+    width: 11rem;
+  }
+}

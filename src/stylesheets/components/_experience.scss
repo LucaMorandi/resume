@@ -1,0 +1,68 @@
+.experience {
+  margin-bottom: $m-medium;
+  padding-bottom: $p-medium;
+  border-bottom: $border solid $c-highlight;
+
+  &:last-of-type {
+    @media ($b-min-large) {
+      border: none;
+    }
+  }
+}
+
+.experience__meta {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: $m-small 0;
+
+  @media ($b-min-large) {
+    margin: $m-medium 0;
+    flex-direction: row;
+  }
+}
+
+.experience__company,
+.experience__date,
+.experience__location {
+  margin-bottom: $m-tiny;
+
+  @media ($b-min-large) {
+    margin: 0;
+  }
+
+  &::before {
+    position: relative;
+    top: $o-icon-tiny;
+    margin-right: $m-tiny;
+  }
+}
+
+.experience__company::before {
+  content: url('../images/icons/building.svg');
+}
+
+.experience__date::before {
+  content: url('../images/icons/calendar.svg');
+}
+
+.experience__location::before {
+  content: url('../images/icons/map-marker.svg');
+}
+
+.experience__title {
+  color: $c-white;
+}
+
+.experience__title,
+.experience__description {
+  margin: $m-small 0;
+}
+
+.experience__summary {
+  @include list;
+}
+
+.experience__item {
+  @include list-item;
+}

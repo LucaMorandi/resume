@@ -1,0 +1,20 @@
+@mixin list {
+  list-style: none;
+}
+
+@mixin list-item {
+  position: relative;
+  margin-bottom: $m-tiny;
+  padding-left: $m-small;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.0625rem;
+    height: .4rem;
+    width: .4rem;
+    transform: rotate(45deg);
+    background: $c-highlight;
+  }
+}
