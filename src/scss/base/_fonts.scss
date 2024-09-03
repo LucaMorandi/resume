@@ -1,3 +1,7 @@
+/**
+ * Fonts
+*/
+
 $fonts-path: '../fonts/Roboto';
 
 @font-face {
@@ -17,4 +21,3 @@ $fonts-path: '../fonts/Roboto';
        url('#{$fonts-path}/Bold/Roboto-Bold.woff') format('woff'),
        url('#{$fonts-path}/Bold/Roboto-Bold.ttf') format('truetype');
 }
-
