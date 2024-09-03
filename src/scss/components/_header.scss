@@ -24,6 +24,10 @@
   @include font-size-h3;
 }
 
+.header__logo {
+  margin-top: $m-tiny;
+}
+
 .header__image {
   margin-left: $m-small;
   width: 5rem;

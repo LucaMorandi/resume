@@ -52,8 +52,12 @@
     content: url('../images/icons/git.svg');
   }
 
-  &--javascript::before {
-    content: url('../images/icons/node-js.svg');
+  &--house::before {
+    content: url('../images/icons/house.svg');
+  }
+
+  &--js::before {
+    content: url('../images/icons/js.svg');
   }
 
   &--keyboard::before {
@@ -82,6 +86,10 @@
 
   &--terminal::before {
     content: url('../images/icons/terminal.svg');
+  }
+
+  &--ts::before {
+    content: url('../images/icons/ts.svg');
   }
 }
 

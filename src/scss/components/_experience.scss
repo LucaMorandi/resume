@@ -6,6 +6,7 @@
   &:last-of-type {
     @media ($b-min-large) {
       border: none;
+      padding-bottom: 0;
     }
   }
 }
