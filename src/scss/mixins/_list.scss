@@ -4,8 +4,8 @@
 
 @mixin list-item {
   position: relative;
-  margin-bottom: $m-tiny;
-  padding-left: $m-small;
+  margin-bottom: $m-small;
+  padding-left: $m-medium;
 
   &::before {
     content: '';

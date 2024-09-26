@@ -12,7 +12,7 @@
 }
 
 .header__title {
-  margin-bottom: $m-small;
+  margin-bottom: $m-medium;
   color: $c-highlight;
 
   @media ($b-min-large) {
@@ -25,11 +25,11 @@
 }
 
 .header__logo {
-  margin-top: $m-tiny;
+  margin-top: $m-small;
 }
 
 .header__image {
-  margin-left: $m-small;
+  margin-left: $m-medium;
   width: 5rem;
   border-radius: 50%;
 

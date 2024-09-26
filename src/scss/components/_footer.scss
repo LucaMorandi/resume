@@ -17,13 +17,13 @@
   content: url('../images/icons/heart.svg');
   position: relative;
   top: 0.3125rem;
-  margin: 0 $m-tiny;
+  margin: 0 $m-small;
 }
 
 .footer__text {
   @include font-size-h3;
 
-  margin: $m-medium 0;
+  margin: $m-large 0;
   text-decoration: none;
 
   &:hover {

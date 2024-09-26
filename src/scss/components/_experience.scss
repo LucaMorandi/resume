@@ -1,5 +1,5 @@
 .experience {
-  margin-bottom: $m-medium;
+  margin-bottom: $m-large;
   padding-bottom: $p-medium;
   border-bottom: $border solid $c-highlight;
 
@@ -15,18 +15,19 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: $m-small 0;
+  margin: $m-medium 0;
 
   @media ($b-min-large) {
-    margin: $m-medium 0;
+    margin: $m-large 0;
     flex-direction: row;
   }
 }
 
 .experience__company,
 .experience__date,
-.experience__location {
-  margin-bottom: $m-tiny;
+.experience__location,
+.experience__stack {
+  margin-bottom: $m-small;
 
   @media ($b-min-large) {
     margin: 0;
@@ -35,7 +36,7 @@
   &::before {
     position: relative;
     top: $o-icon-tiny;
-    margin-right: $m-tiny;
+    margin-right: $m-small;
   }
 }
 
@@ -57,7 +58,7 @@
 
 .experience__title,
 .experience__description {
-  margin: $m-small 0;
+  margin: $m-medium 0;
 }
 
 .experience__summary {
@@ -66,4 +67,15 @@
 
 .experience__item {
   @include list-item;
+}
+
+.experience__stack {
+  margin-top: $m-medium;
+  line-height: $l-large;
+
+  &::before {
+    content: url('../images/icons/code.svg');
+    top: $o-icon-small;
+    margin-left: -$m-tiny;
+  }
 }

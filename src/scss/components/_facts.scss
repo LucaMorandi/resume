@@ -1,5 +1,5 @@
 .facts {
-  margin-bottom: $m-medium;
+  margin-bottom: $m-large;
 }
 
 .facts__list {
@@ -13,7 +13,7 @@
 .facts__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: $m-small;
+  margin-bottom: $m-medium;
   list-style-type: none;
 
   @media (min-width: $b-medium) and (max-width: $b-large) {
@@ -28,8 +28,8 @@
     display: inline-block;
     position: relative;
     top: $o-icon-small;
-    margin-right: $m-tiny;
-    margin-bottom: $m-tiny;
+    margin-right: $m-small;
+    margin-bottom: $m-small;
   }
 
   &--about::before {
@@ -116,7 +116,7 @@
 
   .facts__item {
     display: block;
-    margin-bottom: $m-tiny;
+    margin-bottom: $m-small;
 
     @media (min-width: $b-medium) and (max-width: $b-large) {
       width: 100%;
@@ -125,7 +125,7 @@
 
   .facts__title,
   .facts__description {
-    line-height: 1.75;
+    line-height: $l-medium;
   }
 
   .facts__description::before {
