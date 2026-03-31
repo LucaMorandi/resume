@@ -67,3 +67,7 @@
 .experience__item {
   @include list-item;
 }
+
+.experience__stack-header {
+  margin: $m-small 0 $m-tiny;
+}
