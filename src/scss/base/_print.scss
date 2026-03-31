@@ -3,27 +3,89 @@
 */
 
 @media print {
-  @page { margin: 1cm; }
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html {
+    zoom: 0.75;
+    background-color: $c-base !important;
+  }
+
+  // Force all background colors and images to print — without this,
+  // browsers strip backgrounds and the dark theme disappears entirely.
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 
   body {
-    background: $c-white;
-    color: $c-black;
+    background-color: $c-base !important;
+    max-width: 100%;
   }
 
-  a {
+  // Fallback in case zoom doesn't influence media queries in print.
+  // padding-top matches .facts padding-top so column titles stay aligned.
+  .main-content {
+    width: 55%;
+    padding-top: 0.5rem;
+  }
+
+  .aside {
+    width: 31%;
+  }
+
+  // The facts list has a range query (min:600px–max:1000px) that makes items
+  // flex side-by-side. The print viewport (~794px) falls inside that range,
+  // so we must reset it to a single column here.
+  .facts__list {
+    display: block;
+  }
+
+  .facts__item {
+    width: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  // Suppress the URL browsers append after links when printing.
+  a[href]::after {
+    content: none !important;
+  }
+
+  // Page break control
+  .experience,
+  .facts,
+  .facts__item {
     page-break-inside: avoid;
   }
 
-  blockquote {
-    page-break-inside: avoid;
+  // When a block is pushed to a new page by page-break-inside: avoid, its
+  // top padding becomes the breathing room between the page edge and content.
+  // @page margins can't be used here because their area is always white.
+  .experience,
+  .facts {
+    padding-top: 0.5rem;
   }
 
+  // .experience__title has margin-top: $m-small (1.25rem) from _experience.scss.
+  // Match it on .facts titles so the two columns stay in sync on page 2+.
+  .title {
+    margin-top: $m-small;
+  }
+
+  blockquote,
   table,
   pre {
     page-break-inside: avoid;
   }
 
-  ul, ol, dl  {
+  ul, ol, dl {
     page-break-before: avoid;
   }
 }

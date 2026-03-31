@@ -4,9 +4,6 @@
 /* CSS Reset */
 @import 'base/reset';
 
-/* CSS print */
-@import 'base/print';
-
 /* Fonts */
 @import 'base/fonts';
 
@@ -27,3 +24,6 @@
 @import 'components/experience';
 @import 'components/facts';
 @import 'components/footer';
+
+/* CSS print */
+@import 'base/print';
