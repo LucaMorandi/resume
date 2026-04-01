@@ -12,20 +12,26 @@
 }
 
 .header__title {
-  margin-bottom: $m-small;
   color: $c-highlight;
-
-  @media ($b-min-large) {
-    margin: 0;
-  }
 }
 
 .header__subtitle {
   @include font-size-h3;
 }
 
+.header__name {
+  display: flex;
+  align-items: center;
+  gap: $m-small;
+  margin-bottom: $m-small;
+
+  @media ($b-min-large) {
+    margin-bottom: 0;
+  }
+}
+
 .header__logo {
-  margin-top: $m-tiny;
+  flex-shrink: 0;
 }
 
 .header__image {
